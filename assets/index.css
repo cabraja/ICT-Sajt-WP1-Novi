@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Faust;
+}
+:root {
+	font-size: 18px;
+}
+
+@font-face {
+	font-family: Faust;
+	src: url(./fonts/Faustina-VariableFont_wght.ttf);
+}
+
+/* ==================
+HEADER
+==================== */
+body {
+	overflow-x: hidden;
+}
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1rem;
+	padding: 30px 50px;
+}
+h1 i {
+	color: rgb(226, 191, 126);
+}
+header a {
+	margin-right: 14px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: black;
+}
+header a:hover {
+	color: rgb(226, 191, 126);
+}
+
+/* ====================
+SLIDE
+======================= */
+#slide-show-wrapper button {
+	position: absolute;
+	z-index: 4;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 2.8rem;
+	color: whitesmoke;
+	transition: 0.3s;
+}
+#slide-show-wrapper button:hover {
+	color: rgb(196, 189, 93);
+	transition: 0.3s;
+	cursor: pointer;
+}
+#left-arrow {
+	left: 30px;
+	top: 40%;
+}
+#right-arrow {
+	right: 30px;
+	top: 40%;
+}
+
+#slide-show {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 60vh;
+	width: 100%;
+	overflow-x: hidden;
+	z-index: 2;
+}
+.slide {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: whitesmoke;
+	transition: all 0.8s ease-in-out;
+}
+
+.slide h2 {
+	font-weight: 200;
+	font-size: 4rem;
+	width: 70vw;
+	text-align: center;
+}
+.slide p {
+	font-weight: 200;
+	font-size: 1.1rem;
+	color: rgb(163, 163, 163);
+	width: 70vw;
+	text-align: center;
+}
+
+.slide:nth-child(1) {
+	left: 0%;
+	background-image: url(./photos/slide1.png);
+}
+.slide:nth-child(2) {
+	left: 100%;
+	background-image: url(./photos/slide2.png);
+}
+.slide:nth-child(3) {
+	left: 200%;
+	background-image: url(./photos/slide3.png);
+}
+
+/* ==========================
+TESTIMONIES
+============================= */
+#testimonies-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#testimonies-wrapper h3 {
+	margin-bottom: 30px;
+	font-size: 2rem;
+	color: rgb(12, 12, 12);
+}
+
+#testimonies {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 25%;
+}
+.card img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+}
+.card h5 {
+	font-size: 1.4rem;
+	margin-top: 10px;
+	margin-bottom: 12px;
+}
+.card p {
+	color: rgb(85, 85, 85);
+}
+
+main {
+	height: 100vh;
+	width: 100vw;
+	background-color: aquamarine;
+}

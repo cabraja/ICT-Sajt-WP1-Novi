@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Craft Brewery</title>
     <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://kit.fontawesome.com/a5025c90e1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div id="logo-div">
+            <h1><i class="fas fa-beer"></i> Craft Brewery</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Beers</a>
+            <a href="#">Contact</a>
+            <a href="#"><i class="fas fa-globe-europe"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </nav>
+    </header>
+
+    <div id="slide-show-wrapper">
+
+        <button id="left-arrow"><i class="fas fa-chevron-left"></i></button>
+        <button id="right-arrow"><i class="fas fa-chevron-right"></i></button>
+
+        <div id="slide-show">
+            <div class="slide">
+                <h2>Visit The Craft Brewery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, repudiandae reprehenderit eum ex dignissimos voluptatem ipsa est libero sunt.</p>
+            </div>
+        
+            <div class="slide">
+                <h2>Come And Enjoy With Your Friends</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, repudiandae reprehenderit eum ex dignissimos
+                    voluptatem ipsa est libero sunt.</p>
+            </div>
+        
+            <div class="slide">
+                <h2>We Offer The Best Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste, repudiandae reprehenderit eum ex dignissimos
+                    voluptatem ipsa est libero sunt.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonies-wrapper">
+        <h3>What Our Customers Think</h3>
+        <div id="testimonies">
+            <div class="card">
+                <img src="https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg" alt="woman1">
+                <h5>Anna, 31</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione architecto dignissimos vel quia at possimus dolores omnis dolorum minus?</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="man1">
+                <h5>Mike,34</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem ex veritatis fuga odio omnis, velit asperiores reiciendis incidunt aliquid.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="man2">
+                <h5>John, 25</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae itaque exercitationem alias perspiciatis fuga repudiandae distinctio blanditiis id ex explicabo?</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        
+    </main>
 </body>
+
 <script src="./js/index.js"></script>
+<script src="./slideShow.js"></script>
 </html>
