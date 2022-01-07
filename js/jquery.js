@@ -4,8 +4,7 @@ $(document).ready(function(){
     $(".card p").hide();
     $(document).scroll(function(){
         if(window.scrollY > 160){
-            $(".card p").slideDown(800);
+            $(".card p").slideDown(1000);
         }
     });
-
 })
