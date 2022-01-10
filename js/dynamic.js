@@ -1,7 +1,4 @@
-// Slideshow
-
 let main = document.getElementById("main");
-
 const items = [
     {
     name: "Mitelbruh Lager",
@@ -53,16 +50,54 @@ const items = [
     },
 ]
 
-// Displaying data
+// Displaying data -------------------------------
 
-items.forEach(item => {
+items.forEach((item,index) => {
     let article = document.createElement("article");
     article.innerHTML = `
     <img src=${item.img} alt=${item.name}/>
     <h4>${item.name}</h4>
     <h5>Alcohol: ${item.alcohol}% | Size: ${item.size}</h5>
     <h6>${item.rating} / 5 <span>&#9733;</span></h6>
+    <button class="cart-button" onclick="addToCart(${index})"> Add To Cart</button>
     `;
 
     main.appendChild(article);
 });
+
+
+// Cart functions -------------------------
+let cartButton = document.getElementById("open-cart");
+let cartDiv = document.getElementById("cart");
+let cartMain = document.getElementById("cart-main");
+let isCartClosed = true;
+
+
+
+cartButton.addEventListener("click", () => {
+    if(isCartClosed){
+        cartDiv.style.transform = "translateX(0%)";
+        
+    }
+    else{
+        cartDiv.style.transform = "translateX(100%)";
+    }
+    isCartClosed = !isCartClosed;
+})
+
+// Funkcija koja dodaje predmet u korpu
+function addToCart(index){
+    let itemDiv = document.createElement("div");
+    itemDiv.classList = ("cart-item");
+
+    itemDiv.innerHTML = `
+        <img src=${items[index].img} />
+        <div>
+            <h5>${items[index].name}</h5>
+            <h6>${items[index].price}$</h6>
+        </div>
+    `;
+
+    cartMain.appendChild(itemDiv);
+    
+}
