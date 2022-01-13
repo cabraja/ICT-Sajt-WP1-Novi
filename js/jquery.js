@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(".card p").hide();
 
     $(document).scroll(function(){
-        if(window.scrollY > 160){
+        if(window.scrollY > 200){
             $(".card p").slideDown(1000);
         }
     });
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         setTimeout(() => {
             $("#modal").css("top","-80vh");
-        },[2500])
+        },[2000])
     });
 
 })

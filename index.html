@@ -13,12 +13,14 @@
 <body>
 
     <div id="modal">
-        <p>Predmet je dodat u korpu!</p>
+        <p>Item added to your cart!</p>
     </div>
 
     <div id="cart">
         <h2>Your Cart <i class="fas fa-shopping-basket"></i></h2>
-        <div id="cart-main"></div>
+        <div id="cart-main">
+        </div>
+        <button id="order-button">Order Everything</button>
     </div>
 
     <button id="open-cart"><i class="fas fa-shopping-cart"></i></button>
@@ -92,9 +94,62 @@
         <main id="main">
         </main>
     </div>
+
+    <div id="contact-wrapper">
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+                <p></p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com">
+                <p></p>
+            </div>
+
+            <div class="form-group">
+                <label for="beer">Favourite Beer:</label>
+                <select name="beer" id="beer">
+                    <option value="default-option">Select...</option>
+                    <option value="lager">Lager</option>
+                    <option value="ale">Ale</option>
+                    <option value="porter">Porter</option>
+                    <option value="stout">Stout</option>
+                    <option value="other">Other</option>
+                </select>
+                <p></p>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" cols="80" ></textarea>
+                <p></p>
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="Send" name="check" id="check">
+            </div>
+
+            
+        </form>
+
+        <div id="contact-info">
+            <h3>Contact us!</h3>
+            <hr />
+            <p>If you have any questions regarding our delivery service or if you want to book a table for you and your friends, you can do it here. Just fill in the form on the left and we will read it and answer it as soon as we can! Make sure to type in your contact information correctly before sending.</p>
+            <p>You can also send us a letter on following adress: <br>
+            New Street 24521/2, Salt Lake City, Utah <br></p>
+
+            <p>We hope to hear from you soon!</p>
+
+        </div>
+    </div>
 </body>
 
 <script src="./js/jquery.js"></script>
 <script src="./js/slideShow.js"></script>
 <script src="./js/dynamic.js"></script>
+<script src="./js/formCheck.js"></script>
 </html>

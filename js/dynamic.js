@@ -99,5 +99,4 @@ function addToCart(index){
     `;
 
     cartMain.appendChild(itemDiv);
-    
 }

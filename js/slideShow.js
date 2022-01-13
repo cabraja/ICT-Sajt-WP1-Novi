@@ -18,7 +18,7 @@ setInterval(() => {
        currentSlide = 0;
        translateSlides();
    }
-}, 6000);
+}, 5000);
 
 
 const leftArrow = document.getElementById("left-arrow");
