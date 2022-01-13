@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         setTimeout(() => {
             $("#modal").css("top","-80vh");
-        },[2000])
+        },[1500])
     });
 
 })

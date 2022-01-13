@@ -35,10 +35,10 @@ submitButton.addEventListener("click",() => {
         inputEmail.className = "false";
     }
     else{
-        const regEmail = /^[a-z|A-Z][a-z|A-Z+_\-.]{2,40}[a-z|A-Z][@][a-z]{3,12}[.][a-z]{2,4}$/;
+        const regEmail = /^[a-z|A-Z][a-z|A-Z+_\-.|0-9]{2,40}[a-z|A-Z|0-9][@][a-z]{3,12}[.][a-z]{2,4}$/;
 
         if(!regEmail.test(inputEmail.value)){
-            inputEmail.nextElementSibling.innerHTML = "Email must be in format 'example@mail.domain'."
+            inputEmail.nextElementSibling.innerHTML = "Email must be in format 'example@mail.domain' and can not start with a number or special character."
             inputEmail.className = "false";
         }
         else{

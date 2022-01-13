@@ -445,3 +445,64 @@ textarea {
 	color: rgb(73, 73, 73);
 	font-size: 1.1rem;
 }
+
+/* ==================================
+FOOTER
+====================================== */
+
+footer {
+	width: 100%;
+	padding: 3% 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(34, 34, 34);
+}
+#social-media i {
+	color: rgb(197, 79, 1);
+	font-size: 2.4rem;
+	margin-left: 8px;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#social-media i:hover {
+	transform: scale(1.2);
+}
+#footer-nav {
+	margin-top: 8px;
+}
+#footer-nav a {
+	color: whitesmoke;
+	text-decoration: none;
+	margin-left: 8px;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+#footer-nav a:hover {
+	color: rgb(73, 73, 73);
+}
+#footer-extra {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#footer-extra a {
+	text-decoration: none;
+	color: whitesmoke;
+	transition: 0.1s;
+}
+#footer-extra a:hover {
+	color: rgb(73, 73, 73);
+}
+.separator {
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 2px;
+	height: 1.5rem;
+	background-color: gray;
+}
