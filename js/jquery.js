@@ -19,4 +19,13 @@ $(document).ready(function(){
         },[1500])
     });
 
+    // Pojavljivanje informacija o kontaktiranju pri skrolu
+    $("#contact-info").hide();
+
+    $(document).scroll(function(){
+        if(window.scrollY > ($("form").position().top - 400)){
+            $("#contact-info").slideDown(1000);
+        }
+    });
+
 })

@@ -22,7 +22,7 @@ CART
 	bottom: 20px;
 	right: 50px;
 	color: whitesmoke;
-	background-color: aqua;
+	background-color: rgb(12, 216, 216);
 	border: none;
 	border-radius: 50%;
 	font-size: 1.8rem;
@@ -53,8 +53,9 @@ CART
 	margin-bottom: 22px;
 }
 #order-button {
+	color: whitesmoke;
 	font-size: 1.2rem;
-	font-weight: 600;
+	font-weight: 400;
 	border: 3px solid rgb(197, 79, 1);
 	background-color: rgb(197, 79, 1);
 	padding: 8px 16px;
@@ -143,6 +144,12 @@ header a {
 }
 header a:hover {
 	color: rgb(226, 191, 126);
+}
+#nav-alt-wrapper {
+	display: none;
+}
+#open-nav {
+	display: none;
 }
 
 /* ====================
@@ -414,6 +421,10 @@ textarea {
 }
 .false {
 	border: 1px solid rgb(248, 128, 128);
+}
+#success-message {
+	font-size: 1.1rem;
+	color: black;
 }
 /* Inputs ----------------------------- */
 

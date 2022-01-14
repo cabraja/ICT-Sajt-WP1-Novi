@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1600px) {
+	#cart {
+		width: 50vw;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	/* CART ================================ */
+	#cart {
+		width: 70vw;
+	}
+
+	/* HEADER =============================== */
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	header a {
+		font-size: 1rem;
+		margin-right: 8px;
+	}
+
+	/* SLIDES ================================ */
+	.slide h2 {
+		font-size: 3rem;
+	}
+	.slide p {
+		font-size: 1rem;
+	}
+
+	/* BEERS */
+	article {
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	article h4 {
+		font-size: 1rem !important;
+	}
+	article h5 {
+		font-size: 0.8rem;
+	}
+
+	/* CONTACT ==================================== */
+	#contact-wrapper {
+		padding: 3% 4%;
+	}
+	#contact-info {
+		width: 40%;
+	}
+	#contact-info h3 {
+		font-size: 2rem;
+	}
+	#contact-info p {
+		margin-top: 18px;
+		color: rgb(73, 73, 73);
+		font-size: 0.9rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	nav {
+		display: none;
+	}
+	#nav-alt-wrapper {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: whitesmoke;
+		transform: translateX(100%);
+		transition: 0.4s transform ease-in-out;
+		width: 100vw;
+		height: 50vh;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	#open-nav {
+		display: block;
+		background-color: transparent;
+		border: none;
+		font-size: 1.8rem;
+		color: rgb(36, 36, 36);
+		cursor: pointer;
+	}
+	#nav-alt-wrapper {
+		display: block;
+	}
+	#nav-alt {
+		position: relative;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	#close-nav {
+		background-color: transparent;
+		border: none;
+		font-size: 2rem;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		cursor: pointer;
+		transition: 0.1s;
+	}
+	#close-nav:hover {
+		color: rgb(87, 85, 84);
+	}
+
+	.fa-beer {
+		color: rgb(226, 191, 126);
+	}
+	#nav-alt a {
+		font-size: 1.4rem;
+	}
+}
