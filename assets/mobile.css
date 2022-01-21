@@ -3,7 +3,11 @@
 		width: 50vw;
 	}
 }
-
+/*
+=========================================================================
+1000px Breakpoint
+========================================================================
+ */
 @media only screen and (max-width: 1000px) {
 	/* CART ================================ */
 	#cart {
@@ -57,8 +61,15 @@
 		font-size: 0.9rem;
 	}
 }
-
+/*
+=========================================================================
+700px Breakpoint
+========================================================================
+ */
 @media only screen and (max-width: 700px) {
+	#cart {
+		width: 100vw;
+	}
 	nav {
 		display: none;
 	}
@@ -113,5 +124,140 @@
 	}
 	#nav-alt a {
 		font-size: 1.4rem;
+	}
+
+	#testimonies-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	#testimonies-wrapper h3 {
+		margin-bottom: 30px;
+		font-size: 1.5rem;
+		color: rgb(12, 12, 12);
+	}
+	#testimonies {
+		flex-direction: column;
+	}
+	.card {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	#main-wrapper {
+		padding-bottom: 30px;
+	}
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-items: center;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		row-gap: 50px;
+	}
+
+	#contact-wrapper {
+		flex-direction: column-reverse;
+	}
+	form {
+		font-size: 1.2rem;
+		width: 90%;
+	}
+	#contact-info {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	footer {
+		padding: 6% 10%;
+	}
+}
+
+/*
+=========================================================================
+600px Breakpoint
+========================================================================
+ */
+@media only screen and (max-width: 600px) {
+	#open-cart {
+		position: fixed;
+		z-index: 7;
+		bottom: 20px;
+		right: 30px;
+		color: whitesmoke;
+		background-color: rgb(12, 216, 216);
+		border: none;
+		border-radius: 50%;
+		font-size: 1.4rem;
+		padding: 16px 20px;
+		cursor: pointer;
+	}
+}
+
+/*
+=========================================================================
+500px Breakpoint
+========================================================================
+ */
+@media only screen and (max-width: 500px) {
+	.slide h2 {
+		font-size: 2.2rem;
+	}
+	.slide p {
+		font-size: 0.8rem;
+	}
+	#left-arrow {
+		left: 10px;
+	}
+	#right-arrow {
+		right: 10px;
+	}
+
+	#contact-wrapper {
+		padding-bottom: 50px;
+	}
+	.form-group p {
+		margin-bottom: 16px;
+	}
+	footer {
+		padding: 100px 10%;
+	}
+
+	#footer-nav {
+		font-size: 0.9rem;
+	}
+}
+
+/*
+=========================================================================
+400px Breakpoint
+========================================================================
+ */
+@media only screen and (max-width: 400px) {
+	#main-wrapper h4 {
+		margin-bottom: 10px;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		justify-items: center;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		row-gap: 50px;
+	}
+	article {
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	article h4 {
+		font-size: 1.3rem !important;
+	}
+	article h5 {
+		font-size: 1rem;
 	}
 }
