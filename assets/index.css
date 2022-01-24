@@ -230,6 +230,10 @@ SLIDE
 	left: 200%;
 	background-image: url(./photos/slide3.png);
 }
+.slide:nth-child(4) {
+	left: 300%;
+	background-image: url(./photos/slide4.png);
+}
 
 /* ==========================
 TESTIMONIES

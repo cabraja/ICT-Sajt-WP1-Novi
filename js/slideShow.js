@@ -11,7 +11,7 @@ setInterval(() => {
 
     currentSlide += 100;
 
-   if(currentSlide < 300){
+   if(currentSlide < 400){
        translateSlides();
    }    
    else{
@@ -32,7 +32,7 @@ leftArrow.addEventListener("click",() => {
 })
 
 rightArrow.addEventListener("click",() => {
-    if(currentSlide < 200){
+    if(currentSlide < 300){
         currentSlide += 100;
         translateSlides();
     }
