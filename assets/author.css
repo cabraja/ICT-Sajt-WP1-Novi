@@ -72,6 +72,9 @@ li {
 	footer {
 		position: relative;
 	}
+	#author-main {
+		margin: 20px auto;
+	}
 }
 
 @media only screen and (max-width: 650px) {
