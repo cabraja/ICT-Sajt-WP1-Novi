@@ -100,3 +100,11 @@ function addToCart(index){
 
     cartMain.appendChild(itemDiv);
 }
+
+// Funkcija koja brise predmete iz korpe
+
+const orderButton = document.getElementById("order-button");
+
+orderButton.addEventListener("click",() => {
+    cartMain.innerHTML = "";
+})
